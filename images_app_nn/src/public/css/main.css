@@ -1,0 +1,57 @@
+canvas {
+			border : solid 2px;
+			cursor : url('../img/lapizcursor.gif'), default;
+			background-color: black;
+		}
+		.herramientas {
+			width: 100px;
+		}
+		.herramientas div {
+			background-color: black;
+		}
+		.herramientas div:hover{
+			border: solid red 1px;
+		}
+		.herramientas img:hover{
+			border: solid red 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'canvas canvas canvas canvas'
+  'lapiz borrador color guardar';
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.lapiz{
+  width: 50%;
+}
+.borrador{
+  width: 50%;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: canvas;
+}
+.item2 {
+  grid-area: lapiz;
+}
+.item3 {
+  grid-area: borrador;
+}
+.item4 {
+  grid-area: color;
+
+}
+.item5 {
+  grid-area: guardar;
+}

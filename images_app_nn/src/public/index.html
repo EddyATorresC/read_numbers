@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Communications trough server</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/a05012fa13.js"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>paint</title>
+		<meta name="description" content="">
+		<meta name="author" content="eddy">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  </head>
+  <body>
+    <body>
+      <div class="grid-container">
+        <div class="item1">
+          <canvas width="400" height="400" id="canvas"></canvas>
+        </div>
+        <div class="item2">
+            <a href="#" id="lapiz"><img src="img/lapiz.png"/></a>
+        </div>
+        <div class="item3">
+            <a href="#" id="borrador"><img src="img/borrador.png" /></a>
+        </div>
+        <div class="item4">
+          <div id = "color" style="width: 40px; height: 40px;"></div><br />
+        </div>
+        <div class="item5">
+          <a class = 'btn btn-success mt-4' href="#" id="save" >Enviar</a>
+        </div>
+      </div>
+        <!-- <table>
+          <tr>
+            <td><canvas width="400" height="400" id="canvas"></canvas></td>
+            <td class="grid-container">
+              <div class="form-group">
+
+              </div>
+              <div class="form-group">
+                  <a href="#" id="borrador"><img src="img/borrador.png" /></a>
+              </div>
+              <div class="form-group">
+                <div id = "color" style="width: 40px; height: 40px;"></div><br />
+              </div>
+              <a class = 'btn btn-success mt-4' href="#" download="canvas.png" id="save" >Enviar</a>
+            </td>
+          </tr>
+        </table> -->
+      <script
+        src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script src = "/socket.io/socket.io.js" charset = "utf-8"></script>
+      <script src = "/js/main.js" charset = "utf-8"></script>
+  </body>
+</html>

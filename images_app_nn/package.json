@@ -1,0 +1,23 @@
+{
+  "name": "images_app_nn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-writer": "^1.4.0",
+    "express": "^4.17.1",
+    "mathjs": "^6.0.2",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0",
+    "ws": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
